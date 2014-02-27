@@ -1,0 +1,38 @@
+html,body
+{
+    height: 100%;
+}
+
+body {
+	overflow:hidden;
+}
+
+textarea {
+	-webkit-box-sizing: border-box;
+       -moz-box-sizing: border-box;
+            box-sizing: border-box;
+	width: 100%;
+	height: calc(100% - 50px);
+	resize: none;
+}
+
+.container-fluid, .span8, .span4 {
+	height: 100%;
+}
+
+.form-inline {
+	width: 100%;
+}
+
+.form-input {
+	width: calc(100% - 80px);
+}
+
+.row-fluid {
+	height: calc(100% - 65px);
+}
+
+label {
+	display: inline-block;
+	vertical-align: middle;
+}

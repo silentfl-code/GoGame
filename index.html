@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Go online!</title>
+    <link rel="stylesheet" href="lib/bootstrap.css">
+	<link rel="stylesheet" href="index.css">
+	<script src="lib/dart.js"></script>
+    <script type="application/dart" src="index.dart"></script>
+  </head>
+  <body>
+	<div class="container-fluid">
+		<div class="navbar">
+			<div class="navbar-inner">
+				<a class="brand" href="#">Play go online!</a>
+				<ul class="nav">
+					<li><a href="#">Chat</a></li><li class="divider-vertical"></li>
+					<li><a href="#">Games</a></li><li class="divider-vertical"></li>
+				</ul>
+			</div>
+		</div>
+		<div class="row-fluid">
+			<div class="span8">
+				<textarea id="messages"></textarea>
+				<div class="form-horizontal">
+					<input id="message" type="text" class="form-control form-input"></input>
+					<button id="send" class="btn btn-default">Send</button>
+				</div>
+			</div>
+			<div class="span4">
+				<textarea id="users"></textarea>
+				<label>Users online: 10</label>
+			</div>
+		</div>
+	</div>
+  </body>
+</html>
+
+
+

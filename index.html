@@ -15,25 +15,48 @@
 			<div class="navbar-inner">
 				<a class="brand" href="#">Play go online!</a>
 				<ul class="nav">
-					<li><a href="#">Chat</a></li><li class="divider-vertical"></li>
-					<li><a href="#">Games</a></li><li class="divider-vertical"></li>
+                    <li><a id='nav_start' href="#">Game now</a></li><li class="divider-vertical"></li>
+					<li><a id='nav_chat' href="#">Chat</a></li><li class="divider-vertical"></li>
+					<li><a id='nav_games' href="#">Games</a></li><li class="divider-vertical"></li>
 				</ul>
 			</div>
 		</div>
 		<div class="row-fluid">
+          <div id="tab0" class="tabs">
+            <div class="span12 form-input">
+              Подбор соперника
+            </div>
+          </div>
+          <div id="tab1" class="tabs">
 			<div class="span8">
-				<textarea id="messages"></textarea>
+				<textarea id="messages" readonly></textarea>
 				<div class="form-horizontal">
 					<input id="message" type="text" class="form-control form-input"></input>
 					<button id="send" class="btn btn-default">Send</button>
 				</div>
 			</div>
 			<div class="span4">
-				<textarea id="users"></textarea>
-				<label>Users online: 10</label>
+				<div id="users" class="container"></div>
+                <div class="form-horizontal">
+				  <label id="usersCount">Users online: 1</label>
+                </div>
 			</div>
-		</div>
-	</div>
+          </div>
+		  <div id="tab2" class="tabs">
+            <div class="span8">
+              <textarea id="messages" readonly></textarea>
+              <div class="form-horizontal">
+                <input id="message" type="text" class="form-input form-control"></input>
+                <button id="send" class="btn btn-default">Send</button>
+              </div>
+            </div>
+            <div class="span4">
+              <textarea id="users" readonly></textarea>
+              <label class="form-inline" style="margin:10px; height: 30px;">Users online: {{usersCount}}</label>
+            </div>
+        </div>
+	   </div>
+    </div>
   </body>
 </html>
 

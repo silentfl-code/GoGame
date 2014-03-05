@@ -7,7 +7,7 @@ body {
 	overflow:hidden;
 }
 
-textarea {
+textarea, #users {
 	-webkit-box-sizing: border-box;
        -moz-box-sizing: border-box;
             box-sizing: border-box;
@@ -35,4 +35,28 @@ textarea {
 label {
 	display: inline-block;
 	vertical-align: middle;
+}
+
+.tabs {
+  height:100%;
+  display:none;
+}
+
+#users {
+  border: 1px solid lightgray;
+  border-radius: 3px;
+}
+#users td {
+  border: none;
+}
+
+#messages, #users {
+    cursor: auto;
+    background-color: white;
+    overflow: auto;
+    outline: none;
+
+    -webkit-box-shadow: none;
+    -moz-box-shadow: none;
+    box-shadow: none;
 }
